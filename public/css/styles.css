@@ -1,0 +1,1326 @@
+/* SITE COLORS
+#463f3aff -- Font color
+#bcb8b1ff -- this is a catch all, the footer has a similar color. use as needed.
+#f4f3eeff -- replaces the default white background color
+#e0afa0ff -- the melon color will act as the accent color in most of the borders of the original site.
+*/
+/* Universal Rules */
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  margin: 0; padding: 0;
+  height: auto;
+  min-height: 100vh;
+  background: #f4f3eeff;
+}
+body img {
+  width:100%;
+}
+
+input:focus { outline: none;}
+
+.container {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  max-width: 1500px;
+}
+
+.main-header, .auth-nav {
+z-index: +999;}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+ .auth-nav {
+   width: 100%;
+   height: auto;
+   text-align: right;
+   background-color: #e0afa0ff;
+   padding-bottom: 5px;
+   padding-right: 10px;
+   border-bottom: 1px #bcb8b1ff solid;
+   position: fixed;
+   top:0;
+ }
+ .auth-nav a {
+   color: #463f3aff;
+   padding: 0 3px;
+   font-size: .9em;
+   font-weight: bold;
+ }
+ .main-header {
+   width:100%; height: 160px;
+   position: fixed; top: 25px;
+   box-shadow: 0 4px 5px -2px gray; background: #f4f3eeff;
+   display: flex; justify-content: space-around;
+   flex-wrap: wrap;
+ }
+ .logo-box {
+   width:100%;
+   padding:5vh 0;
+   margin-bottom: 10px;
+   text-align: center;
+   flex-basis: 100%;
+ }
+ .header-menu-box, .header-bag-box { flex-basis: 10%; }
+ .header-menu-box img, .header-bag-box img { width: 40px; cursor: pointer;}
+
+ .header-search-wrapper {
+   width:90%; height: 100px;
+   flex-basis: 75%;
+   text-align: center;
+   position: relative;
+   cursor: pointer;
+ }
+ .header-search-wrapper input {
+   width:95%; height: 45px;
+   border-radius: 5px;
+   border: 1px solid #e0afa0;
+   padding: 5px 1% 5px 50px;
+   background-color: #f4f3ee;
+   font-size: 1em;
+   font-weight: bold;
+ }
+
+ .header-search-wrapper img {
+   position: absolute; left: 10px;
+   width: 45px;
+ }
+
+ footer {
+   width: 100%;
+   height: auto;
+   padding: 30px;
+   background-color: #4D4D4D;
+   color: #fff;
+   border-top: 1px solid black;
+   float: left;
+   display: flex; justify-content: space-around;
+   flex-wrap: wrap;
+ }
+
+ footer section {
+   flex-basis: 70%;
+   text-align: center;
+ }
+ footer section h5 {
+   font-weight: bolder;
+   font-size: 1.2em;
+ }
+ footer section ul {
+   list-style: none;
+   padding: 0;
+ }
+ footer section ul a {
+   color: #fff;
+ }
+ .live-chat-bttn {
+   border: 2px solid #463f3aff ;
+   width: 100px;
+   margin: 0 auto;
+   border-radius: 5px;
+   background-color: #e0afa0ff;
+   color: #fff;
+   padding: 5px;
+ }
+ .footer-copyright {
+   flex-basis: 100%;
+   text-align: center;
+   margin: 50px 0;
+
+ }
+ /* ++++++++++++++ NOTICE +++++++++++++++ */
+ /* Site Content CSS Styling begins here! */
+
+ .container {
+   margin: 0 auto;
+   padding: 0;
+   margin-top: 160px;
+   max-width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+ }
+ .HP-Hero, .HP-Zones, .HP-Sub-Zones {
+   height: auto;
+   min-height: 300px;
+   position: relative; justify-content:space-around;
+   flex-basis: 90%;
+   margin: 0 auto;
+ }
+ .HP-Hero {
+   height: 450px;
+   background-image:url("../images/homeworks-HP-Hero.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: left;
+ }
+ .HP-Hero img {
+   display: none;
+ }
+ .HP-Hero-Overlay {
+   background-color: rgba(224, 175, 160, .8);
+   width: auto;
+   max-width: 250px;
+   height: 210px;
+   position: absolute;
+   bottom: 20%;
+   padding: 10px 30px;
+   display: flex; justify-content:flex-start;
+   flex-wrap: wrap;
+   text-align: center;
+   border-radius: 5px;
+ }
+ .HP-Hero-Overlay h1 {
+   font-size: 4.5em;
+   flex-basis: 20%;
+   margin-bottom: 0;
+   padding-bottom: 0;
+   height: 70px;
+   margin-left: 20%;
+ }
+ .HP-Hero-Overlay .sub-h1 {
+   text-align: center;
+   font-size: 1.5em;
+   flex-basis: 30%;
+   margin-left: 0;
+ }
+ .percnt-symbol {
+   font-size: 2em;
+   text-align: left;
+ }
+ .HP-Hero-Overlay h4 {
+   font-size: 1.3em;
+   flex-basis: 100%;
+   height: 30px;
+   margin: 0;
+   padding-bottom: 0;
+   text-align: center;
+ }
+ .HP-Hero-Overlay h6 {
+   font-size: 1em;
+   flex-basis: 100%;
+   margin: 0;
+   margin-top: -10px;
+   padding-bottom: 0;
+   height: 20px;
+   text-align: center;
+ }
+ .HP-Hero-CTA {
+   color: white;
+   font-weight: bolder;
+   font-size: 1.3em;
+   text-decoration: underline;
+   margin: 0 auto;
+ }
+ .HP-Multi-Banner {
+   flex-basis: 90%;
+   margin: 0 auto;
+   display: flex; justify-content: space-around;
+   flex-wrap: wrap;
+ }
+ .HP-Sub-Zones, .HP-Zones {
+   flex-basis: 100%;
+   margin: 0 auto;
+   margin-top: 50px;
+ }
+ .HP-Sub-Zones img {
+   border-radius: 5px;
+ }
+ .HP-Sub-Zones h5, h6 {
+   text-align: center;
+   font-weight: bolder;
+   font-size: 1.7em;
+   margin-top: 15px;
+ }
+ .HP-Sub-Zones h6 {
+   font-size: 1.3em;
+   color: red;
+ }
+ .HP-Zones {
+   flex-basis: 90%;
+   position: relative;
+ }
+ .HP-Zones:last-child {
+   margin-bottom: 50px;
+ }
+ .HP-Zone-Overlay {
+   position: absolute;
+   bottom: 25%; left: 25%;
+   background-color: rgba(255,255,255, 0.8);
+   width: auto;
+   padding: 30px;
+   text-align: center;
+ }
+ .HP-Zone-Overlay h6 {
+   font-weight:200;
+   font-size: 1.3em;
+ }
+ .HP-Zone-CTA {
+   text-decoration: underline;
+   font-weight: bold;
+ }
+ .Full-Width { flex-basis: 100%;}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .auth-nav {
+    width: 100%;
+    height: auto;
+    text-align: right;
+    background-color: #e0afa0ff;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    border-bottom: 1px #bcb8b1ff solid;
+  }
+  .auth-nav a {
+    color: #463f3aff;
+    padding: 0 3px;
+    font-size: .9em;
+    font-weight: bold;
+  }
+
+  .main-header {
+    width:100%; height: 70px;
+    display: flex; justify-content:flex-end;
+    flex-wrap: wrap;
+    background: #f4f3eeff;
+    position: relative;
+  }
+  .logo-box {
+    width:30%;
+    max-width: 250px;
+    padding:3.5vh 0;
+    margin-bottom: 10px;
+    text-align: center;
+    position: absolute; left: 0;
+  }
+  .header-menu-box, .header-bag-box {
+    width: 50px;
+    height: 100%;
+    flex-basis: 8%;
+    text-align: center;
+  }
+  .header-menu-box img, .header-bag-box img {
+    width: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .header-search-wrapper {
+    width:30%; height: 100px;
+    flex-basis: 50%;
+    margin-top: 2vh;
+    margin-right: 10px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .header-search-wrapper input {
+    width:100%; height: 35px;
+    border-radius: 5px;
+    border: 2.5px solid #e0afa0;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    background-color: #f4f3ee;
+    font-size: 1em;
+  }
+  .header-search-wrapper img {
+    position: absolute; right: 0px;
+    width: 35px;
+  }
+  footer {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    background-color: #4D4D4D;
+    color: #fff;
+    border-top: 1px solid black;
+    float: left;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  footer section {
+    flex-basis: 30%;
+    text-align: center;
+  }
+  footer section h5 {
+    font-weight: bolder;
+    font-size: 1.2em;
+  }
+  footer section ul {
+    list-style: none;
+    padding: 0;
+  }
+  footer section ul a {
+    color: #fff;
+  }
+  .live-chat-bttn {
+    border: 2px solid #463f3aff ;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #e0afa0ff;
+    color: #fff;
+    padding: 5px;
+  }
+  .footer-copyright {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 50px 0;
+
+  }
+  /* ++++++++++++++ NOTICE +++++++++++++++ */
+  /* Site Content CSS Styling begins here! */
+
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+  }
+  .HP-Hero, .HP-Zones, .HP-Sub-Zones {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .HP-Hero {
+    height: auto;
+    background-image:none;
+  }
+  .HP-Hero img {
+    display:block;
+  }
+  .HP-Hero-Overlay {
+    background-color: rgba(224, 175, 160, .8);
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    bottom: 40px;
+    padding:0 20px;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .HP-Hero-Overlay h1 {
+    font-size: 6.5em;
+    flex-basis: 50%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 100px;
+  }
+  .HP-Hero-Overlay .sub-h1 {
+    text-align: center;
+    font-size: 2em;
+    flex-basis: 50%;
+    padding-top: 20px;
+    margin-left: -30px;
+  }
+  .percnt-symbol {
+    font-size: 2em;
+    text-align: left;
+  }
+  .HP-Hero-Overlay h4 {
+    font-size: 1.5em;
+    flex-basis: 100%;
+    height: 30px;
+    margin: 0;
+    padding-bottom: 0;
+    margin-top: -20px;
+    text-align: center;
+  }
+  .HP-Hero-Overlay h6 {
+    font-size: 1em;
+    flex-basis: 100%;
+    margin: 0;
+    margin-top: -20px;
+    padding-bottom: 0;
+    height: 20px;
+    text-align: center;
+  }
+  .HP-Hero-CTA {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.3em;
+    text-decoration: underline;
+  }
+  .HP-Multi-Banner {
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .HP-Sub-Zones {
+    flex-basis: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .HP-Sub-Zones img {
+    border-radius: 10px;
+  }
+  .HP-Sub-Zones h5, h6 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.3em;
+    margin-top: 15px;
+  }
+  .HP-Sub-Zones h6 {
+    font-size: 1.5em;
+    color: red;
+  }
+  .HP-Zones {
+    flex-basis: 90%;
+    position: relative;
+    margin: 50px 0;
+  }
+  .HP-Zones:last-child {
+    margin-bottom: 50px;
+  }
+  .HP-Zone-Overlay {
+    min-width: 60%;
+    position: absolute;
+    bottom: 25%; left: 20%;
+    background-color: rgba(255,255,255, 0.8);
+    width: auto;
+    padding: 30px;
+    text-align: center;
+  }
+  .HP-Zone-Overlay h2 {
+    font-size: 2.5em;
+  }
+  .HP-Zone-Overlay h6 {
+    font-weight:200;
+    font-size: 1.8em;
+  }
+  .HP-Zone-CTA {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  .Full-Width { flex-basis: 100%;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .auth-nav {
+    width: 100%;
+    height: auto;
+    text-align: right;
+    background-color: #e0afa0ff;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    border-bottom: 1px #bcb8b1ff solid;
+  }
+  .auth-nav a {
+    color: #463f3aff;
+    padding: 0 3px;
+    font-size: .9em;
+    font-weight: bold;
+  }
+
+  .main-header {
+    width:100%; height: 70px;
+    display: flex; justify-content:flex-end;
+    flex-wrap: wrap;
+    background: #f4f3eeff;
+    position: relative;
+  }
+  .logo-box {
+    width:30%;
+    max-width: 250px;
+    padding:3.5vh 0;
+    margin-bottom: 10px;
+    text-align: center;
+    position: absolute; left: 0;
+  }
+  .header-menu-box, .header-bag-box {
+    width: 50px;
+    height: 100%;
+    flex-basis: 8%;
+    text-align: center;
+  }
+  .header-menu-box img, .header-bag-box img {
+    width: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .header-search-wrapper {
+    width:30%; height: 100px;
+    flex-basis: 50%;
+    margin-top: 2vh;
+    margin-right: 10px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .header-search-wrapper input {
+    width:100%; height: 35px;
+    border-radius: 5px;
+    border: 2.5px solid #e0afa0;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    background-color: #f4f3ee;
+    font-size: 1em;
+  }
+  .header-search-wrapper img {
+    position: absolute; right: 0px;
+    width: 35px;
+  }
+  footer {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    background-color: #4D4D4D;
+    color: #fff;
+    border-top: 1px solid black;
+    float: left;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  footer section {
+    flex-basis: 25%;
+    text-align: left;
+  }
+  footer section h5 {
+    font-weight: bolder;
+    font-size: 1.3em;
+  }
+  footer section ul {
+    list-style: none;
+    padding: 0;
+  }
+  footer section ul a {
+    color: #fff;
+  }
+  .live-chat-bttn {
+    border: 2px solid #463f3aff ;
+    width: 100px;
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #e0afa0ff;
+    color: #fff;
+    padding: 5px;
+  }
+  .footer-copyright {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 50px 0;
+  }
+  /* ++++++++++++++ NOTICE +++++++++++++++ */
+  /* Site Content CSS Styling begins here! */
+
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+  }
+  .HP-Hero, .HP-Zones, .HP-Sub-Zones {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .HP-Hero-Overlay {
+    background-color: rgba(224, 175, 160, .8);
+    width: 350px;
+    height: 230px;
+    position: absolute;
+    bottom: 80px;
+    padding:0 20px;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: right;
+    border-radius: 5px;
+  }
+  .HP-Hero-Overlay h1 {
+    font-size: 6.5em;
+    flex-basis: 50%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 100px;
+    text-align: right;
+  }
+  .HP-Hero-Overlay .sub-h1 {
+    text-align: center;
+    font-size: 2.5em;
+    flex-basis: 50%;
+    text-align: left;
+    padding-top: 10px;
+    margin-left: 0;
+  }
+  .percnt-symbol {
+    font-size: 2em;
+    text-align: left;
+  }
+  .HP-Hero-Overlay h4 {
+    font-size: 2.18em;
+    flex-basis: 100%;
+    height: 30px;
+    margin: 0;
+    padding-bottom: 0;
+    margin-top: -20px;
+    padding-left: 40px;
+    text-align: right;
+  }
+  .HP-Hero-Overlay h6 {
+    font-size: 1.5em;
+    flex-basis: 100%;
+    margin: 0;
+    margin-top: 10px;
+    padding-bottom: 0;
+    height: 20px;
+    text-align: right;
+  }
+  .HP-Hero-CTA {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.3em;
+    text-decoration: underline;
+    margin-left: 215px;
+  }
+  .HP-Multi-Banner {
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .HP-Sub-Zones {
+    flex-basis: 30%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .HP-Sub-Zones img {
+    border-radius: 10px;
+    height: 150px;
+  }
+  .HP-Sub-Zones h5, h6 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.3em;
+    margin-top: 15px;
+
+  }
+  .HP-Sub-Zones h6 {
+    font-size: 1.2em;
+    color: red;
+    margin-top: -10px;
+  }
+  .HP-Zones {
+    flex-basis: 90%;
+    position: relative;
+    margin: 50px 0;
+  }
+  .HP-Zones:last-child {
+    margin-bottom: 50px;
+  }
+  .HP-Zone-Overlay {
+    max-width: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: 35%; left: 20%;
+    background-color: rgba(255,255,255, 0.8);
+    width: auto;
+    padding: 30px;
+    text-align: center;
+  }
+  .HP-Zone-Overlay h2 {
+    font-size: 2.5em;
+  }
+  .HP-Zone-Overlay h6 {
+    font-weight:200;
+    font-size: 1.8em;
+  }
+  .HP-Zone-CTA {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  .Full-Width { flex-basis: 100%;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .auth-nav {
+    width: 100%;
+    height: auto;
+    text-align: right;
+    background-color: #e0afa0ff;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    border-bottom: 1px #bcb8b1ff solid;
+  }
+  .auth-nav a {
+    color: #463f3aff;
+    padding: 0 3px;
+    font-size: .9em;
+    font-weight: bold;
+  }
+
+  .main-header {
+    width:100%; height: 70px;
+    display: flex; justify-content:flex-end;
+    flex-wrap: wrap;
+    background: #f4f3eeff;
+    position: relative;
+  }
+  .logo-box {
+    width:30%;
+    max-width: 250px;
+    padding:3.5vh 0;
+    margin-bottom: 10px;
+    text-align: center;
+    position: absolute; left: 0;
+  }
+  .header-menu-box, .header-bag-box {
+    width: 50px;
+    height: 100%;
+    flex-basis: 5%;
+    text-align: center;
+  }
+  .header-menu-box img, .header-bag-box img {
+    width: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .header-search-wrapper {
+    width:30%; height: 100px;
+    flex-basis: 50%;
+    margin-top: 2vh;
+    margin-right: 10px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .header-search-wrapper input {
+    width:100%; height: 35px;
+    border-radius: 5px;
+    border: 2.5px solid #e0afa0;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    background-color: #f4f3ee;
+    font-size: 1em;
+  }
+  .header-search-wrapper img {
+    position: absolute; right: 0px;
+    width: 35px;
+  }
+  footer {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    background-color: #4D4D4D;
+    color: #fff;
+    border-top: 1px solid black;
+    float: left;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  footer section {
+    flex-basis: 25%;
+    text-align: left;
+  }
+  footer section h5 {
+    font-weight: bolder;
+    font-size: 1.3em;
+  }
+  footer section ul {
+    list-style: none;
+    padding: 0;
+  }
+  footer section ul a {
+    color: #fff;
+  }
+  .live-chat-bttn {
+    border: 2px solid #fff ;
+    width: 100px;
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #e0afa0ff;
+    color: #fff;
+    padding: 5px;
+  }
+  .footer-copyright {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 50px 0;
+
+  }
+  /* ++++++++++++++ NOTICE +++++++++++++++ */
+  /* Site Content CSS Styling begins here! */
+
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+  }
+  .HP-Hero, .HP-Zones, .HP-Sub-Zones {
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    position: relative;
+  }
+  .HP-Hero {
+    height: 450px;
+    overflow: hidden;
+  }
+  .HP-Hero img {
+    width: 100%;
+  }
+  .HP-Hero-Overlay {
+    background-color: rgba(224, 175, 160, .8);
+    width: 450px;
+    height: 230px;
+    position: absolute;
+    bottom: 80px;
+    padding:0 20px;
+    text-align: right;
+    border-radius: 5px;
+  }
+  .HP-Hero-Overlay h1 {
+    font-size: 6.5em;
+    width: 60%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 100px;
+    text-align: right;
+  }
+  .HP-Hero-Overlay .sub-h1 {
+    text-align: left;
+    font-size: 3em;
+    padding-top: 0;
+  }
+  .percnt-symbol {
+    font-size: 2em;
+    text-align: left;
+  }
+  .HP-Hero-Overlay h4 {
+    font-size: 2.6em;
+    flex-basis: 100%;
+    height: 30px;
+    margin: 0; margin-top: -20px;
+    padding-bottom: 0;
+    text-align: right;
+  }
+  .HP-Hero-Overlay h6 {
+    font-size: 2em;
+    flex-basis: 100%;
+    margin: 0; margin-top:0;
+    padding-bottom: 0;
+    height: 20px;
+    text-align: right;
+  }
+  .HP-Hero-CTA {
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.8em;
+    text-decoration: underline;
+  }
+  .HP-Multi-Banner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .HP-Sub-Zones {
+    flex-basis: 33%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .HP-Sub-Zones img {
+    border-radius: 10px;
+    height: 200px;
+  }
+  .HP-Sub-Zones h5, h6 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.8em;
+    margin-top: 15px;
+
+  }
+  .HP-Sub-Zones h6 {
+    font-size: 1.5em;
+    color: red;
+    margin-top: 0;
+  }
+  .HP-Zones {
+    flex-basis: 90%;
+    position: relative;
+    margin: 50px 0;
+    max-height: 500px;
+    overflow: hidden;
+  }
+  .HP-Zones:last-child {
+    margin-bottom: 50px;
+  }
+  .HP-Zone-Overlay {
+    max-width: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: 30%; left: 20%;
+    background-color: rgba(255,255,255, 0.8);
+    width: auto;
+    padding: 30px;
+    text-align: center;
+  }
+  .HP-Zone-Overlay h2 {
+    font-size: 2.5em;
+  }
+  .HP-Zone-Overlay h6 {
+    font-weight:200;
+    font-size: 1.8em;
+  }
+  .HP-Zone-CTA {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  .Full-Width { flex-basis: 100%;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .auth-nav {
+    width: 100%;
+    height: auto;
+    text-align: right;
+    background-color: #e0afa0ff;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    border-bottom: 1px #bcb8b1ff solid;
+  }
+  .auth-nav a {
+    color: #463f3aff;
+    padding: 0 3px;
+    font-size: .9em;
+    font-weight: bold;
+  }
+
+  .main-header {
+    width:100%; height: 120px;
+    display: flex; justify-content:flex-end;
+    flex-wrap: wrap;
+    background: #f4f3eeff;
+    position: relative;
+  }
+  .logo-box {
+    width:30%;
+    max-width: 250px;
+    padding:3.5vh 0;
+    margin-bottom: 10px;
+    text-align: center;
+    position: absolute; left: 0;
+  }
+  .header-menu-box, .header-bag-box {
+    width: 50px;
+    height: 100%;
+    flex-basis: 5%;
+    text-align: center;
+  }
+  .header-menu-box img, .header-bag-box img {
+    width: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .header-search-wrapper {
+    height: 100px;
+    flex-basis: 20%; height: 40px;
+    margin-top: 2vh;
+    margin-right: 10px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .header-search-wrapper input {
+    width:100%; height: 35px;
+    border-radius: 5px;
+    border: 2.5px solid #e0afa0;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    background-color: #f4f3ee;
+    font-size: 1em;
+  }
+  .header-search-wrapper img {
+    position: absolute; right: 0px;
+    width: 35px;
+  }
+  .navigation-menu {
+    margin-top: -50px;
+    display:inline-flex;
+    display: flex; justify-content:space-between;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+
+  }
+  .navigation-menu ul {
+    padding: 0;
+    margin: 0;
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .navigation-menu ul li {
+    margin: 0 1%;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 10px 15px;
+    font-size: 1.3em;
+    transition: all ease 300ms;
+    position: relative;
+    overflow: visible;
+  }
+  .navigation-menu ul li:hover {
+    border-radius: 5px 5px 0 0;
+    background-color: #C7C5C7;
+    color: white;
+  }
+
+  .nav-dropdown-menu {
+    width:100vw; padding: 0 10%;
+    background-color: #FFFEFA;
+    position: fixed; top:145px; left:-5999px;
+    font-size: .8em;
+    text-align: left;
+    display: flex; justify-content:flex-start;
+    flex-wrap: wrap;
+    border-bottom: 10px solid #bcb8b1ff;
+    padding: 0 100px;
+    transition: all ease 800ms;
+    opacity: 0;
+  }
+  .nav-dropdown-section {
+    flex-basis: 20%;
+    height: auto;
+    min-height: 200px;
+    padding: 30px 0;
+  }
+  .nav-dropdown-section-last {
+    flex-basis: 60%;
+  }
+  .nav-dropdown-section h5 {
+    flex-basis: 100%;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+    opacity: 1;
+  }
+  .nav-sub-menu {
+    flex-basis: 100%;
+  }
+  .nav-sub-menu a li {
+    padding: 0; margin: 3px 0;
+    text-align: left;
+    font-size: 1em;
+    width: 100%;
+  }
+  .nav-sub-menu a li:hover {
+    background: none;
+    text-decoration: underline;
+    color: blue;
+  }
+  .nav-sub-menu a:hover {
+    background: none;
+    text-align: underline;
+  }
+  .nav-sub-menu-images {
+    width: 130px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+  }
+  .navigation-menu ul li:hover div{
+    left: 0;
+    display: flex;
+    opacity: 1;
+    z-index: 0;}
+  .navigation-menu ul li:hover div h5{ color: black;}
+
+  footer {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    background-color: #4D4D4D;
+    color: #fff;
+    border-top: 1px solid black;
+    float: left;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  footer section {
+    flex-basis: 25%;
+    text-align: left;
+  }
+  footer section h5 {
+    font-weight: bolder;
+    font-size: 1.3em;
+  }
+  footer section ul {
+    list-style: none;
+    padding: 0;
+  }
+  footer section ul a {
+    color: #fff;
+  }
+  .live-chat-bttn {
+    border: 2px solid #fff;
+    width: 100px;
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #e0afa0ff;
+    color: #fff;
+    padding: 5px;
+  }
+  .footer-copyright {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 50px 0 10px;
+
+  }
+  /* ++++++++++++++ NOTICE +++++++++++++++ */
+  /* Site Content CSS Styling begins here! */
+
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1300px;
+  }
+  .HP-Hero, .HP-Zones, .HP-Sub-Zones {
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    position: relative;
+  }
+  .HP-Hero {
+    height: 550px;
+    overflow: hidden;
+  }
+  .HP-Hero img {
+    width: 100%;
+  }
+  .HP-Hero-Overlay {
+    background-color: rgba(224, 175, 160, .8);
+    width: 350px;
+    height: 230px;
+    position: absolute;
+    bottom: 80px;
+    padding:0 20px;
+    text-align: right;
+    border-radius: 5px;
+  }
+  .HP-Hero-Overlay h1 {
+    font-size: 5.5em;
+    width: 60%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 100px;
+    text-align: right;
+  }
+  .HP-Hero-Overlay .sub-h1 {
+    text-align: left;
+    font-size: 2.5em;
+    padding-top: 0;
+  }
+  .percnt-symbol {
+    font-size: 2em;
+    text-align: left;
+  }
+  .HP-Hero-Overlay h4 {
+    font-size: 2em;
+    flex-basis: 100%;
+    height: 30px;
+    margin: 0; margin-top: -20px;
+    padding-bottom: 0;
+    text-align: right;
+  }
+  .HP-Hero-Overlay h6 {
+    font-size: 1.8em;
+    flex-basis: 100%;
+    margin: 0; margin-top:0;
+    padding-bottom: 0;
+    height: 20px;
+    text-align: right;
+  }
+  .HP-Hero-CTA {
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.4em;
+    text-decoration: underline;
+    padding: 0; margin: 0;
+  }
+  .HP-Multi-Banner {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex; justify-content:space-between;
+    flex-wrap: wrap;
+  }
+  .HP-Sub-Zones {
+    flex-basis: 32%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-right: 1.5%
+  }
+  .HP-Sub-Zones:last-child {
+    margin-right: 0;
+  }
+  .HP-Sub-Zones img {
+    border-radius: 10px;
+    height: 200px;
+  }
+  .HP-Sub-Zones h5, h6 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.8em;
+    margin-top: 15px;
+
+  }
+  .HP-Sub-Zones h6 {
+    font-size: 1.5em;
+    color: red;
+    margin-top: 0;
+  }
+  .HP-Zones {
+    flex-basis: 90%;
+    position: relative;
+    margin: 50px 0;
+    max-height: 500px;
+    overflow: hidden;
+  }
+  .HP-Zones:last-child {
+    margin-bottom: 50px;
+  }
+  .HP-Zone-Overlay {
+    max-width: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: 30%; left: 20%;
+    background-color: rgba(255,255,255, 0.8);
+    width: auto;
+    padding: 30px;
+    text-align: center;
+  }
+  .HP-Zone-Overlay h2 {
+    font-size: 2.5em;
+  }
+  .HP-Zone-Overlay h6 {
+    font-weight:200;
+    font-size: 1.8em;
+  }
+  .HP-Zone-CTA {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  .Full-Width { flex-basis: 100%;}
+}
